@@ -47,11 +47,13 @@ heroes.map((hero /* : string */): string => {
   return `Hero is ${hero}`;
 });
 
+//? Don't return anything - void
 function consoleError(errormsg: string): void {
   console.log(errormsg);
   return;
 }
 
+//? never - to never return an error
 function handleError(errormsg: string): never {
   throw new Error(errormsg)
 }
